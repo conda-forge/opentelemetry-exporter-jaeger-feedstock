@@ -1,5 +1,5 @@
 {% set name = "opentelemetry-exporter-jaeger" %}
-{% set version = "1.4.1" %}
+{% set version = "1.5.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/opentelemetry-exporter-jaeger-{{ version }}.tar.gz
-  sha256: 007158979847ad0f28f8de634de002e6b27ced5d0409aa5a1fd655ba9b3e0565
+  sha256: 3b53f0e1c680bc0920225dd00f1566d032be4d7590054746d554192df066727e
 
 build:
   number: 0
@@ -20,8 +20,8 @@ requirements:
     - pip
     - python >=3.6
   run:
-    - opentelemetry-exporter-jaeger-proto-grpc ==1.4.1
-    - opentelemetry-exporter-jaeger-thrift ==1.4.1
+    - opentelemetry-exporter-jaeger-proto-grpc ==1.5.0
+    - opentelemetry-exporter-jaeger-thrift ==1.5.0
     - python >=3.6
 
 test:
