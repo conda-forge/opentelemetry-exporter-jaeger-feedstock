@@ -1,5 +1,5 @@
 {% set name = "opentelemetry-exporter-jaeger" %}
-{% set version = "1.15.0" %}
+{% set version = "1.18.0" %}
 
 package:
   name: {{ name|lower }}
@@ -21,8 +21,8 @@ requirements:
     - hatchling
   run:
     - python >=3.7
-    - opentelemetry-exporter-jaeger-proto-grpc ==1.15.0
-    - opentelemetry-exporter-jaeger-thrift ==1.15.0
+    - opentelemetry-exporter-jaeger-proto-grpc ==1.18.0
+    - opentelemetry-exporter-jaeger-thrift ==1.18.0
 
 test:
   imports:
